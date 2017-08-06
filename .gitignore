@@ -99,3 +99,6 @@ build/
 [Oo]bj/
 packages/
 cmocka/
+
+# Arm documentation used for cpregs generation
+utils/arm-doc/
