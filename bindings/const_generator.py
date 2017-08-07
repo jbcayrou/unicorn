@@ -3,7 +3,7 @@
 from __future__ import print_function
 import sys, re, os
 
-INCL_DIR = os.path.join('..', 'include', 'unicorn')
+INCL_DIR = os.path.join('.', 'tmp')
 
 include = [ 'arm.h', 'arm64.h', 'mips.h', 'x86.h', 'sparc.h', 'm68k.h', 'unicorn.h' ]
 
