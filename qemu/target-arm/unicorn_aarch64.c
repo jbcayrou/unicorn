@@ -44,7 +44,7 @@ static int arm64_uc_to_qemu_cp_regs(unsigned int regid)
 {
     int i;
     const uc_arm_cp_reg * tmp = NULL;
-    for(int i=0; i < sizeof(ARM64_CP_REGS_INFO); i++){
+    for(i=0; i < sizeof(ARM64_CP_REGS_INFO); i++){
         tmp = &ARM64_CP_REGS_INFO[i];
         if (regid==tmp->uc_reg_id){   
             return ENCODE_AA64_CP_REG(tmp->cp, tmp->crn, tmp->crm, tmp->opc0, tmp->opc1, tmp->opc2);

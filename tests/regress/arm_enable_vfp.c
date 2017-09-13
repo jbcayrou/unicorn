@@ -24,7 +24,6 @@ int main()
         printf("uc_open %d\n", err);
         return 1;
     }
-    printf("val :  %lx \n", tmp_val);
     
     tmp_val = tmp_val | (0xf << 20);
     err = uc_reg_write(uc, UC_ARM_REG_CPACR, &tmp_val);
@@ -45,7 +44,6 @@ int main()
         printf("uc_open %d\n", err);
         return 1;
     }
-    printf("val :  %lx \n", tmp_val);
 
     err = uc_mem_map(uc, ADDRESS, 4 * 1024, UC_PROT_ALL);
     if (err) {
