@@ -25,6 +25,7 @@ HEADERS_PREPROC  := $(HEADERS:$(HEADERS_DIR)/%.h=$(HEADERS_PREPROC_DIR)/%.h)
 
 .PHONY: build install python c clean check test
 
+tmp_headers: $(TEMPDIR) $(HEADERS_PREPROC)
 
 build: $(TEMPDIR) $(HEADERS_PREPROC)
 

@@ -68,7 +68,7 @@ install: lib jar
 	cp $(JARFILE) $(JAVA_HOME)/lib/ext
 
 gen_const:
-	cd .. && python const_generator.py java
+	cd .. && make tmp_headers && python const_generator.py java
 
 clean:
 	rm unicorn/*.class

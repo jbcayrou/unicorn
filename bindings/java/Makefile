@@ -16,7 +16,7 @@ install: lib jar
 	$(MAKE) -f Makefile.build install
 
 gen_const:
-	cd .. && python const_generator.py java
+	cd .. && make tmp_headers && python const_generator.py java
 
 clean:
 	rm -f unicorn/*.class
