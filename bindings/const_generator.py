@@ -90,6 +90,8 @@ template = {
         },
 }
 
+all_arch_prefix = [ template["python"][tmp_target].upper() for tmp_target in include]
+
 # markup for comments to be added to autogen files
 MARKUP = '//>'
 
@@ -139,6 +141,15 @@ def gen(lang):
                         rhs = ''.join(f[2:])
                     else:
                         rhs = str(count)
+
+                    if prefix == "":
+                        incorrect_prefix = False
+                        for arch in all_arch_prefix:
+                            if f[0].startswith("UC_" + arch):
+                                incorrect_prefix = True
+                                break
+                        if incorrect_prefix:
+                            continue
 
                     lhs = f[0].strip()
                     # evaluate bitshifts in constants e.g. "UC_X86 = 1 << 1"
