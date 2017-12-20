@@ -1,40 +1,4 @@
 # For Unicorn Engine. AUTO-GENERATED FILE, DO NOT EDIT [unicorn_const.py]
-
-# M68K registers
-
-# X86 registers
-
-# X86 instructions
-
-# ARM registers
-
-# CP registers
-
-# alias registers
-
-# ARM64 registers
-
-# pseudo registers
-
-# CP registers
-
-# alias registers
-
-# MIPS registers
-
-# General purpose registers
-
-# DSP registers
-
-# ACC registers
-
-# COP registers
-
-# FPU registers
-
-# AFPR128
-
-# SPARC registers
 UC_API_MAJOR = 1
 
 UC_API_MINOR = 0

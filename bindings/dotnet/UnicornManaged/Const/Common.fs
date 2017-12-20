@@ -6,42 +6,6 @@ open System
 
 [<AutoOpen>]
 module Common =
-
-    // M68K registers
-
-    // X86 registers
-
-    // X86 instructions
-
-    // ARM registers
-
-    // CP registers
-
-    // alias registers
-
-    // ARM64 registers
-
-    // pseudo registers
-
-    // CP registers
-
-    // alias registers
-
-    // MIPS registers
-
-    // General purpose registers
-
-    // DSP registers
-
-    // ACC registers
-
-    // COP registers
-
-    // FPU registers
-
-    // AFPR128
-
-    // SPARC registers
     let UC_API_MAJOR = 1
 
     let UC_API_MINOR = 0

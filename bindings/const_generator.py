@@ -102,8 +102,11 @@ def gen(lang):
         prefix = templ[target]
         outfile = open(templ['out_file'] %(prefix), 'wb')   # open as binary prevents windows newlines
         outfile.write((templ['header'] % (prefix)).encode("utf-8"))
+        add_comments = True
+
         if target == 'unicorn.h':
             prefix = ''
+            add_comments = False
         lines = open(os.path.join(INCL_DIR, target)).readlines()
 
         previous = {}
@@ -111,7 +114,7 @@ def gen(lang):
         for line in lines:
             line = line.strip()
 
-            if line.startswith(MARKUP):  # markup for comments
+            if add_comments and line.startswith(MARKUP):  # markup for comments
                 outfile.write(("\n%s%s%s\n" %(templ['comment_open'], \
                             line.replace(MARKUP, ''), templ['comment_close'])).encode("utf-8"))
                 continue

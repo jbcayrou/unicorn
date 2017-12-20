@@ -1,42 +1,6 @@
 package unicorn
 // For Unicorn Engine. AUTO-GENERATED FILE, DO NOT EDIT [unicorn_const.go]
 const (
-
-// M68K registers
-
-// X86 registers
-
-// X86 instructions
-
-// ARM registers
-
-// CP registers
-
-// alias registers
-
-// ARM64 registers
-
-// pseudo registers
-
-// CP registers
-
-// alias registers
-
-// MIPS registers
-
-// General purpose registers
-
-// DSP registers
-
-// ACC registers
-
-// COP registers
-
-// FPU registers
-
-// AFPR128
-
-// SPARC registers
 	API_MAJOR = 1
 
 	API_MINOR = 0
